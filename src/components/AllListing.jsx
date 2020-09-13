@@ -10,11 +10,11 @@ const AllListing = (props) => {
     const [isAdd,updateAddStatus] = useState(false);
     const [searchText,updateSearchText] = useState('');
     
-    //Filtering the data as per the search Text since the text is a state variable the re render runs again.
+    //Filtering the data as per the search Text since the text is a state variable the re render runs again .
     if(searchText && listData.length > 0){
         let dummyList = [];
         listData.map(data => {
-            if(data.City.includes(searchText) || data.State.includes(searchText) || data.District.includes(searchText))
+            if((data.City.toLowerCase()).includes(searchText.toLowerCase()) || (data.State.toLowerCase()).includes(searchText.toLowerCase()) || (data.District.toLowerCase()).includes(searchText.toLowerCase()))
                 dummyList.push(data);
         });
         listData = dummyList;
