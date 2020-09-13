@@ -2,7 +2,7 @@
   "name": "navigator-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://varun5482.github.io/navigatorApp",
+  "homepage": "https://navigator-app.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
